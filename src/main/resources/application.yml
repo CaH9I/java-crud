@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/java_crud
+    username: postgres
+    password: admin
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+server:
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
